@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubra como transformar sua vida através de hábitos poderosos">
+    <meta name="keywords" content="hábitos, desenvolvimento pessoal, hábitos atômicos, felicidade">
+    <meta name="author" content="Hábitos Transformadores">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Hábitos Transformadores</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Hábitos Transformadores</h1>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Início</a></li>
+                    <li><a href="fundamentos.html">Fundamentos</a></li>
+                    <li><a href="felicidade.html">Felicidade</a></li>
+                    <li><a href="pratica.html">Prática</a></li>
+                    <li class="dropdown">
+                        <a href="#ciclo-habito">Mais ▽</a>
+                        <div class="dropdown-content">
+                            <a href="#form-contato">Contato</a>
+                            <a href="#carousel">Galeria</a>
+                            <a href="#recursos">Recursos</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section id="introducao">
+                <h1>Transforme Sua Vida com Hábitos Poderosos</h1>
+                <p>Bem-vindo à sua jornada de <span class="destaque">transformação pessoal</span>!</p>
+                
+                <div class="citacao">
+                    Você não se eleva ao nível de seus objetivos. Você cai ao nível de seus sistemas. - James Clear
+                </div>
+
+                <div class="botao-personalizado">
+                    <a href="fundamentos.html" style="color: inherit; text-decoration: none;">Descubra os Fundamentos</a>
+                </div>
+            </section>
+
+            <section id="carousel">
+                <h2>Nossa Jornada de Transformação</h2>
+                <div class="carousel">
+                    <div class="carousel-slides">
+                        <div class="carousel-slide active">
+                            <img src="images/foto1.png" alt="Hábitos Matinais">
+                            <div class="carousel-caption">
+                                <h3><span style="color: rgb(255, 255, 255);">Hábitos Matinais Transformadores</span></h3>
+                                <p style="text-align: center;">Comece seu dia com propósito e energia</p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/foto2.png" alt="Meditação">
+                            <div class="carousel-caption">
+                                <h3><span style="color: rgb(255, 255, 255);">Prática de Meditação</span></h3>
+                                <p style="text-align: center;">Encontre paz interior e clareza mental</p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/foto3.png" alt="Exercícios">
+                            <div class="carousel-caption">
+                                <h3><span style="color: rgb(255, 255, 255);">Exercício Físico Regular</span></h3>
+                                <p style="text-align: center;">Fortaleça corpo e mente</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-btn carousel-prev" onclick="prevSlide()">❮</button>
+                    <button class="carousel-btn carousel-next" onclick="nextSlide()">❯</button>
+                    <div class="carousel-dots">
+                        <button class="carousel-dot active" onclick="currentSlideFunc(0)"></button>
+                        <button class="carousel-dot" onclick="currentSlideFunc(1)"></button>
+                        <button class="carousel-dot" onclick="currentSlideFunc(2)"></button>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Entenda a Ciência dos Hábitos</h2>
+                <div class="iframe-container"> 
+                    <iframe width="100%" height="400" src="https://www.youtube.com/embed/0JXid0CxBAE?si=qOMcFGLBQ-ElzGlz" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                </div>
+            </section>
+            
+            <section class="svg-container">
+                <h2>O Ciclo do Hábito</h2>
+                <svg class="habito-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    
+                    <circle cx="100" cy="100" r="80" fill="none" stroke="#4A90E2" stroke-width="8"/>
+                    <circle cx="100" cy="100" r="60" fill="none" stroke="#7ED321" stroke-width="6"/>
+                    <circle cx="100" cy="100" r="40" fill="none" stroke="#9013FE" stroke-width="4"/>
+                    <text x="100" y="50" text-anchor="middle" fill="#2C3E50" font-size="12">Estimulo</text>
+                    <text x="150" y="100" text-anchor="middle" fill="#2C3E50" font-size="12">Desejo</text>
+                    <text x="100" y="150" text-anchor="middle" fill="#2C3E50" font-size="12">Resposta</text>
+                    <text x="50" y="100" text-anchor="middle" fill="#2C3E50" font-size="12">Recompensa</text>
+                </svg>
+            </section>
+
+            <section id="recursos">
+                <h2>Recursos Essenciais</h2>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <h3>Ferramentas Gratuitas</h3>
+                        <p>Rastreadores de hábitos, planners e templates para download</p>
+                    </div>
+                    <div class="grid-item">
+                        <h3>Comunidade</h3>
+                        <p>Conecte-se com outras pessoas em busca de transformação</p>
+                    </div>
+                    <div class="grid-item">
+                        <h3>Artigos Científicos</h3>
+                        <p>Base científica por trás da formação de hábitos</p>
+                    </div>
+                    <div class="grid-item">
+                        <h3>Vídeos Exclusivos</h3>
+                        <p>Conteúdo em vídeo com especialistas e cases</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="form-contato">
+                <h2>Entre em Contato</h2>
+                <form id="formContato" method="POST" action="/enviar-contato" onsubmit="validarFormulario(event)">
+                    <div class="form-group">
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error" id="emailError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" required>
+                        <span class="error" id="telefoneError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cpf">CPF:</label>
+                        <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required>
+                        <span class="error" id="cpfError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="interesse">Área de Interesse:</label>
+                        <select id="interesse" name="interesse" required>
+                            <option value="">Selecione...</option>
+                            <option value="habitos">Hábitos Produtivos</option>
+                            <option value="felicidade">Felicidade e Bem-estar</option>
+                            <option value="saude">Saúde e Exercícios</option>
+                            <option value="aprendizado">Aprendizado Contínuo</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Conte-nos sobre seus objetivos..." maxlength="500"></textarea>
+                        <div class="contador-caracteres" id="contador">500 caracteres restantes</div>
+                    </div>
+
+                    <button type="submit" class="botao-personalizado">Enviar Mensagem</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Hábitos Transformadores. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
